@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' media="screen and (max-width: 1450px)" href='css/phone.css'>
+    <title>Welcome To Uttar Pradesh Tourism</title>
+    <style>
+        /* basic css */
+        body {
+            background-color: blanchedalmond;
+        }
+
+        /* CSS reset */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS for Navigation */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /* CSS for logo */
+        #logo img {
+            margin: 0px 8px;
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 42px;
+        }
+
+        /* CSS for navigation list */
+        ul {
+            display: flex;
+            margin: 0px 0px;
+        }
+
+        /* CSS for navigation links */
+        a {
+            text-decoration: none;
+            padding: 0px 14px;
+            display: block;
+            color: white;
+            border-radius: 15px;
+        }
+
+        /* CSS for Navigationbackground image */
+        #navbar::before {
+            content: "";
+            margin: -9px 0px;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 127%;
+            width: 100%;
+            z-index: -1;
+            border: 2px solid white;
+            border-radius: 12px;
+            opacity: 0.4;
+        }
+
+        /* CSS for hover link in navigation menu */
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /* CSS for navigation list item */
+        li {
+            list-style: none;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder
+        }
+
+        /* CSS for Navigation */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 77px;
+            height: 451px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* CSS for Navigation */
+        #home::before {
+            content: "";
+            background: url(img/city-building-5053052_1920.jpg) no-repeat center center/cover;
+            position: absolute;
+            height: 90%;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            background-repeat: no-repeat;
+            height: 500px;
+            opacity: 0.8;
+        }
+
+        /* CSS for Navigation */
+        .y {
+            margin: 2px 0px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        /* CSS for button */
+        .btn {
+            margin-top: 14px;
+            padding: 6px 15px;
+            border: 3px solid grey;
+            border-radius: 15px;
+        }
+
+        /* CSS for button */
+        .btn:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        /* CSS for service section */
+        .h {
+            margin: 4px 0px;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        /* CSS for service section */
+        .h-primary {
+            margin: 4px 0px;
+            font-size: 2.5rem;
+            color: black;
+            text-align: center;
+        }
+
+        /* CSS for button */
+        .btn {
+            width: 124px;
+        }
+
+        /* CSS for service section */
+        #tourist {
+            display: flex;
+            margin: 18px;
+        }
+
+        /* CSS for service section */
+        #tourist .box {
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 2px 15px;
+            padding: 5px 10px;
+            background-color: rgb(250, 220, 168);
+        }
+
+        /* CSS for service section */
+        #tourist .box img {
+            height: 116px;
+            display: block;
+            margin: auto;
+            border: 3px solid blue;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+
+        /* CSS for service section */
+        .h-secondary {
+            font-size: 2rem;
+            padding: 12px;
+        }
+
+        /* CSS for custom property */
+        .center {
+            text-align: center;
+        }
+
+        /* CSS for  */
+        .box p {
+            text-align: center;
+        }
+
+        /* CSS for sponser section */
+        #sponser-section {
+            position: relative;
+        }
+
+        /* CSS for sponser section */
+        #sponser {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* CSS for sponser section */
+        .sponser-item {
+            padding: 15px 40px;
+        }
+
+        /* CSS for sponser section */
+        #sponser img {
+            height: 160px;
+        }
+
+        /* CSS for sponser section */
+        #sponser-section h1 {
+            padding-top: 50px;
+        }
+
+        /* CSS for sponser section */
+        #sponser-section::before {
+            content: "";
+            position: absolute;
+            background: url(img/railroad-163518_1280.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+
+        /* CSS for contact section */
+        #contact {
+            position: relative;
+            height: 100%;
+        }
+
+        /* CSS for contact section */
+        #contact::before {
+            content: "";
+            position: absolute;
+            background: url(img/sunset-6363203_1280.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            border: 2px solid black;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+
+        /* CSS for footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px 20px;
+        }
+
+        /* CSS for contact section */
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        /* CSS for contact section */
+        #contact-box input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+
+        /* CSS for contact section */
+        #contact-box form {
+            width: 40%;
+            font-size: 1.3rem;
+        }
+
+        /* CSS for Submit Button */
+        .form-group1 {
+            margin-top: 20px;
+            width: 100px;
+            padding: 3px 15px;
+            margin-top: 8px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src='img/HVlcGfEH_400x400.jpg' alt='Uttar Pradesh'>
+        </div>
+        <ul>
+            <li class="item"><a href='#home'>Home</a></li>
+            <li class="item"><a href='#tourist-container'>Tourist Spots</a></li>
+            <li class="item"><a href='#sponser-section'>Sponsers</a></li>
+            <li class="item"><a href='#contact'>Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h center">Welcome To Uttar Pradesh Tourism</h1>
+        <p class='y center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cbhbcnckjnldvv laudantium dolore
+            saepe.
+        </p>
+        <p class='y center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. odio asperiores nemo corrupti,
+            beatae ad
+        </p>
+        <button class="btn">Book Your Trip</button>
+    </section>
+
+    <section id="tourist-container">
+        <h1 class="h-primary center">Our Tourist Places</h1>
+        <div id="tourist">
+            <div class="box">
+                <img src='img/taj-mahal-866692_640.jpg' alt='Taj Mahal'>
+                <h2 class="h-secondary center">Agra</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos numquam, voluptates illum
+                    repellendus rem officiis, rerum error animi,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi repellendus, dolor nihil ad, eius et ipsam cum debitis laboriosam nobis magni! Quas labore
+                    perspiciatis repellat. saepe laboriosam esse magnam iusto. Dolor itaque nam
+                    iusto distinctio consectetur, quaerat dolorum ducimus reprehenderit.</p>
+            </div>
+            <div class="box">
+                <img src='img/898494-870070-ayodhya-092319.jpg' alt='Ayodhya Ghat'>
+                <h2 class="h-secondary center">Ayodhya</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos numquam, voluptates illum
+                    repellendus rem officiis, rerum error animi,Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    At tenetur odit rerum excepturi iure delectus iusto modi ad, architecto atque blanditiis labore
+                    corrupti porro animi? saepe laboriosam esse magnam iusto. Dolor itaque nam
+                    iusto distinctio consectetur, quaerat dolorum ducimus reprehenderit.</p>
+            </div>
+            <div class="box">
+                <img src='img/indian-temple-4782312_640.jpg' alt='Prem Mandir'>
+                <h2 class="h-secondary center">Mathura</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos numquam, voluptates illum
+                    repellendus rem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sunt natus voluptatem
+                    ducimus possimus expedita architecto adipisci obcaecati dolores temporibus, optio dolorem quaerat
+                    consectetur ut.officiis, rerum error animi, saepe laboriosam esse magnam iusto. Dolor itaque nam
+                    iusto distinctio consectetur, quaerat dolorum ducimus reprehenderit.</p>
+            </div>
+            <div class="box">
+                <img src='img/indian-temple-4782316_640.jpg' alt='Banke Bihari Temple'>
+                <h2 class="h-secondary center">Vrindavan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                    doloribus magnam unde similique, consectetur nam vero corporis vel. Ab nam voluptate dignissimos
+                    numquam, deserunt similique.
+                    adipisicing elit. Modi quos numquam, voluptates illum
+                    repellendus rem officiis, rerum error animi, saepe laboriosam esse magnam iusto. Dolor itaque nam
+                    iusto distinctio consectetur, quaerat dolorum ducimus reprehenderit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponser-section">
+        <h1 class="h-primary center">Our Sponsers</h1>
+        <div id="sponser">
+            <div class="sponser-item">
+                <img src='img/Capture.png' alt='IRCTC'>
+            </div>
+            <div class="sponser-item">
+                <img src='img/t.png' alt='UP Government'>
+            </div>
+            <div class="sponser-item">
+                <img src='img/HVlcGfEH_400x400.jpg' alt='Up Tourism'>
+            </div>
+            <div class="sponser-item">
+                <img src='img/g.png' alt='UPSRTC'>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <br>
+        <h1 class="h-primary center">Contact Us For More Information</h1>
+        <div id="contact-box">
+            <form action='backend.php'>
+                <div class="form-group">
+                    <label for='Name'><b>Name:</b> </label>
+                    <input type="text" name='name' id='name' placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for='Email'><b>Email: </b></label>
+                    <input type="email" name='email' id='Email' placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for='Phone'><b>Phone No: </b></label>
+                    <input type="number" name='Phone' id='MyPhone' placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for='date'><b>Date Of Journy: </b></label>
+                    <input type="date" name='date' id='MyDate' placeholder="Enter your Date Of Journey">
+                </div>
+                <div class="form-group">
+                    <label for='Name'><b>Duration Of Trip:</b> </label>
+                    <input type="number" name='Duration' id='Duration'
+                        placeholder="Enter your Duration Of Trip (in Days)">
+                </div>
+                <div class="form-group1">
+                    <input type="submit" value='Submit'>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.uptourism.com. All Rights Reserved
+        </div>
+
+    </footer>
+</body>
+
+</html>
